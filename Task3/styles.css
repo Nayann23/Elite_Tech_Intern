@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  margin: 0;
+}
+
+.converter-container {
+  font-family: "Gilroy";
+  background-color: #333;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: Gilroy;
+}
+
+label {
+  font-size: 14px;
+  color: white;
+  font-family: "Gilroy";
+}
+
+input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dddddd;
+  border-radius: 4px;  
+  font-family: "Gilroy";
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-family: "Gilroy";
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  font-family: "Gilroy";
+  background-color: #1efff475;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0ef;
+  color: black;
+}
+
+#result {
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+}

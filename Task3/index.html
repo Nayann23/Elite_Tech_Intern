@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="converter-container">
+      <h2 style="font-size: 14px;">ELite Tech Task3</h2>
+      <h2>Temperature Converter</h2>
+      <form id="tempForm">
+        <label for="temperature">Enter Temperature:</label>
+        <input type="number" id="temperature" required>
+        
+        <label for="unit">Convert from:</label>
+        <select id="unit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        
+        <button type="button" onclick="convertTemperature()">Convert</button>
+      </form>
+      
+      <h3>Converted Temperature:</h3>
+      <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

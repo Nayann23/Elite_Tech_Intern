@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <% if (errorMessage && errorMessage.length > 0) { %>
+        <div class="absolute top-4 left-1/2 -translate-x-1/2 p-3 rounded-md bg-red-500">
+            <span class="inline-block mt-2 mb-2 text-white">
+                <%= errorMessage %>
+            </span>
+        </div>
+    <% } %>
+  
+    <% if (successMessage && successMessage.length > 0) { %>
+        <div class="absolute top-4 left-1/2 -translate-x-1/2 p-3 rounded-md bg-green-500">
+            <span class="inline-block mt-2 mb-2 text-white">
+                <%= successMessage %>
+            </span>
+        </div>
+    <% } %>
+
+    <div class="min-h-screen w-full bg-gradient-to-r from-sky-900 to-indigo-800 flex items-center justify-center font-[Gilroy] text-white">
+        <form action="/login" method="post" class="w-1/4 h-[60vh] border-[2px] border-sky-600 rounded text-center shadow-2xl flex items-center justify-center flex-col" autocomplete="off">
+            <h1 class="text-2xl mb-2 mt-3">Login</h1>
+            <input class="bg-transparent border-[2px] outline-none placeholder-zinc-200 p-2 mb-3 rounded border-sky-600" type="email" name="email" placeholder="email" required />
+            <input class="bg-transparent border-[2px] outline-none placeholder-zinc-200 p-2 mb-3 rounded border-sky-600" type="password" name="password" placeholder="password" required />
+            <input class="bg-sky-800 hover:bg-transparent border-[2px] outline-none placeholder-zinc-200 py-2 px-5 mb-3 rounded border-sky-600" type="submit" value="Login" />
+            <h4 class="text-zinc-300">Not a user? <a class="underline" href="/register">Register</a></h4>
+        </form>
+    </div>
+</body>
+</html>
